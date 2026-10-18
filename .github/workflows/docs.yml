@@ -1,0 +1,10 @@
+# 文档层闸门（调用中央套件；判据与升级都在那边，这里只有 4 行）。
+name: 文档层闸门
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  docs-gate:
+    uses: alexa1983/doc-gate-kit/.github/workflows/docs-gate.yml@main
